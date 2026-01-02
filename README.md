@@ -8,7 +8,7 @@ Marketing and retention team need ways to identify:
 ## Project Goal
 To build a scalable data pipeline using PySpark that transforms raw customer, order and web event data into actionable insights for marketing and stakeholders. This is delovered through Power BI dashboard.
 
-## Data sources
+## Data Sources
 Following are the data sources used and they are of various formats:
 * Customer Profile - Parquet format
   This dataset contains the Customer Id, country and signup date
@@ -18,3 +18,12 @@ Following are the data sources used and they are of various formats:
   
 * Web events of customers - JSON format
   This dataset contains Customer Id, Event Time and Event Type
+
+## Data Pipeline and Transformation
+
+## Output
+
+## Analytics and Visualization
+
+## Tech Stack
+
