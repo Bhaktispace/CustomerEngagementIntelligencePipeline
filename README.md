@@ -27,3 +27,8 @@ Following are the data sources used and they are of various formats:
 
 ## Tech Stack
 
+## Potential Advanced Studies
+* Advanced segmentation Analysis: Create a highly targeted segments based on user behavor
+* Personalized Campaigns: Deliver real-time, tailored messages across multiple channels like push notification, in-app messages and emails
+* Behavioral Analytics: Gain deep insights into customer journeys and behavior, helping optimize marketing strategies
+* Automation: Identify at-risk users and engage them with personalized win-back campaigns.
