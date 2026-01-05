@@ -32,3 +32,29 @@ Following are the data sources used and they are of various formats:
 * Personalized Campaigns: Deliver real-time, tailored messages across multiple channels like push notification, in-app messages and emails
 * Behavioral Analytics: Gain deep insights into customer journeys and behavior, helping optimize marketing strategies
 * Automation: Identify at-risk users and engage them with personalized win-back campaigns.
+
+## PHASE 8️⃣ – Power BI Dashboard (What to Build)
+Pages to include
+📊 Page 1: Customer Overview
+
+Total customers
+
+Avg engagement score
+
+Revenue by engagement tier
+
+🚨 Page 2: At-Risk Customers
+
+Count of high-risk customers
+
+Revenue at risk
+
+Table of customers with low score
+
+🔍 Page 3: Driver Analysis
+
+Engagement vs orders
+
+Engagement vs sessions
+
+Engagement by country
