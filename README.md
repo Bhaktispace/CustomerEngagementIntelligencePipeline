@@ -34,27 +34,244 @@ Following are the data sources used and they are of various formats:
 * Automation: Identify at-risk users and engage them with personalized win-back campaigns.
 
 ## PHASE 8️⃣ – Power BI Dashboard (What to Build)
-Pages to include
-📊 Page 1: Customer Overview
+“The dashboard progresses from high-level engagement health to explainability, segmentation, churn risk, and finally individual customer drill-down, enabling both strategic and tactical decision-making.”
+Create a behaviorally aware engagement score at the customer level by combining:
 
-Total customers
+Purchase recency
 
-Avg engagement score
+Purchase frequency
 
-Revenue by engagement tier
+Web engagement activity
 
-🚨 Page 2: At-Risk Customers
+Monetary value
 
-Count of high-risk customers
+This score will be used to identify:
 
-Revenue at risk
+High-value customers
 
-Table of customers with low score
+At-risk customers
 
-🔍 Page 3: Driver Analysis
+Highly engaged non-buyers
 
-Engagement vs orders
+1️⃣ Executive Overview (Start Here)
+🎯 Purpose
 
-Engagement vs sessions
+High-level health check of customer engagement.
 
-Engagement by country
+Key Questions Answered
+
+How engaged is our customer base overall?
+
+Are we growing or losing engagement?
+
+How many customers are at risk?
+
+Visuals
+
+KPI cards:
+
+Avg Engagement Score
+
+% High-Risk Customers
+
+Total Customers
+
+Avg Sessions (30 Days)
+
+Engagement score distribution (histogram)
+
+Customer segmentation donut:
+
+High / Medium / Low engagement
+
+Trend: Avg engagement score over time (if snapshot history exists)
+
+Why It’s Strong
+
+✔ Business-first
+✔ C-level friendly
+✔ Immediate impact
+
+2️⃣ Engagement Score Breakdown
+🎯 Purpose
+
+Explain why customers have the scores they do.
+
+Key Questions
+
+What drives engagement most?
+
+Are customers engaged via browsing or buying?
+
+Are recent sessions translating to purchases?
+
+Visuals
+
+Scatter plot:
+
+X: Sessions last 30 days
+
+Y: Total orders
+
+Size: Total revenue
+
+Bar chart:
+
+Avg recency, frequency, monetary scores
+
+Decomposition tree:
+
+Engagement Score → Recency / Frequency / Monetary
+
+Why It’s Strong
+
+✔ Transparent modeling
+✔ Shows feature engineering thinking
+✔ Avoids “black box” scoring
+
+3️⃣ Customer Segmentation
+🎯 Purpose
+
+Identify actionable customer groups.
+
+Segments
+
+High Engagement / High Revenue (VIPs)
+
+High Engagement / Low Orders (Converters-to-be)
+
+Low Engagement / High Revenue (At-risk VIPs)
+
+Low Engagement / Low Revenue (Dormant)
+
+Visuals
+
+Matrix:
+
+Engagement band × Revenue band
+
+Clustered bar:
+
+Customers by segment
+
+Table with drill-through:
+
+Customer ID
+
+Engagement score
+
+Sessions
+
+Orders
+
+Revenue
+
+Why It’s Strong
+
+✔ Marketing-ready
+✔ Retention-focused
+✔ Highly actionable
+
+4️⃣ At-Risk Customers (Churn Focus)
+🎯 Purpose
+
+Identify customers who need intervention.
+
+Definition Used
+
+Low engagement score
+
+Low sessions
+
+No recent orders
+
+Visuals
+
+KPI: Total at-risk customers
+
+Trend: At-risk % over time
+
+Table:
+
+Customer ID
+
+Last order date
+
+Sessions last 30 days
+
+Engagement score
+
+Conditional formatting (red/yellow/green)
+
+Why It’s Strong
+
+✔ Clear churn story
+✔ Easy business adoption
+✔ Perfect for stakeholder demos
+
+5️⃣ Behavioral Analysis (Web Events)
+🎯 Purpose
+
+Understand browsing behavior vs conversion.
+
+Key Questions
+
+Are customers browsing but not buying?
+
+Where are drop-offs happening?
+
+Are sessions meaningful?
+
+Visuals
+
+Funnel:
+
+Page View → Add to Cart → Checkout → Order
+
+Avg sessions vs avg orders (line or bar)
+
+Heatmap:
+
+Engagement score vs session count
+
+Why It’s Strong
+
+✔ Uses your web events data
+✔ Connects Spark sessionization to BI
+✔ Shows full-funnel thinking
+
+6️⃣ Customer Drill-Through Page (Advanced but Impressive)
+🎯 Purpose
+
+Deep-dive into individual customers.
+
+Activated By
+
+Clicking customer ID anywhere else
+
+Visuals
+
+Customer profile summary
+
+Order history timeline
+
+Session trend (last 30 days)
+
+Engagement score components
+
+Why It’s Strong
+
+✔ Shows model explainability
+✔ Feels “real-world”
+✔ Very impressive for portfolios
+
+🧭 Optional (If You Want to Go Further)
+7️⃣ Data Quality & Model Monitoring
+
+% customers with nulls
+
+Score distribution stability
+
+Outlier detection
+
+This screams senior-level but is optional.
