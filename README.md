@@ -20,6 +20,7 @@ Following are the data sources used and they are of various formats:
   This dataset contains Customer Id, Event Time and Event Type
 
 ## Data Pipeline and Transformation
+customer-level engagement scores by normalizing recency, frequency, monetary, and behavioral features using min–max scaling, with log transformation applied to revenue to mitigate skew. The resulting score supports customer segmentation and churn analysis.
 
 ## Output
 
