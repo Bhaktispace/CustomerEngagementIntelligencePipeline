@@ -13,12 +13,15 @@ The final output is optimized for downstream BI consumption and customer engagem
 ## Data Sources
 Following are the data sources used and they are of various formats:
 * Customer Profile - Parquet format
+
   This dataset contains the Customer Id, country and signup date
   
 * Orders - Parquet format
+
   This dataset contains Order Id, Customer Id, Order Date and Order Amount
   
 * Web events of customers - JSON format
+
   This dataset contains Customer Id, Event Time and Event Type
 
 ## Data Pipeline and Transformation
@@ -29,6 +32,10 @@ customer-level engagement scores by normalizing recency, frequency, monetary, an
 ## Analytics and Visualization
 
 ## Tech Stack
+* PySpark (Spark SQL, Window Functions)
+* Google Colab (execution environment)
+* Parquet & JSON (source data formats)
+* CSV (analytics-ready output for BI tools)
 
 ## Potential Advanced Studies
 * Advanced segmentation Analysis: Create a highly targeted segments based on user behavor
