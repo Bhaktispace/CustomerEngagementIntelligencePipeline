@@ -6,7 +6,9 @@ Marketing and retention team need ways to identify:
 * Customers losing engagement and at risk of churn
 
 ## Project Goal
-To build a scalable data pipeline using PySpark that transforms raw customer, order and web event data into actionable insights for marketing and stakeholders. This is delovered through Power BI dashboard.
+To build a scalable data pipeline using PySpark that transforms raw customer, order and web event data into actionable insights for marketing and stakeholders. The pipeline is designed with production-style practices including data quality checks, sessionization logic, reproducibility controls, and explicit handling of edge cases.
+
+The final output is optimized for downstream BI consumption and customer engagement analysis.
 
 ## Data Sources
 Following are the data sources used and they are of various formats:
