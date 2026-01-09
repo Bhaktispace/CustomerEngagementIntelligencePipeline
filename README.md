@@ -24,7 +24,23 @@ Following are the data sources used and they are of various formats:
 
   This dataset contains Customer Id, Event Time and Event Type
 
-## Data Pipeline and Transformation
+## Data Pipeline Architecture
+1. Data Ingestion
+   
+   * Reads Parquet and JSON datasets using Spark.
+   * Recursive file lookup enabled to support partitioned data
+   * Schema inspection after the load
+
+2. Data Quality and Integrity Checks
+   
+   The pipeline enforces data validation rules before transformation:
+   * Null checks on primary identifiers
+   * Referential integrity checks to prevent orphan orders or events
+   * Validation of non-negative order amounts
+   * One-row-per customer grain
+  
+3. Web Sessionization
+   
 customer-level engagement scores by normalizing recency, frequency, monetary, and behavioral features using min–max scaling, with log transformation applied to revenue to mitigate skew. The resulting score supports customer segmentation and churn analysis.
 
 ## Output
