@@ -40,9 +40,65 @@ Following are the data sources used and they are of various formats:
    * One-row-per customer grain
   
 3. Web Sessionization
-   
-customer-level engagement scores by normalizing recency, frequency, monetary, and behavioral features using min–max scaling, with log transformation applied to revenue to mitigate skew. The resulting score supports customer segmentation and churn analysis.
 
+   Web Events are sessionized using Spark window functions
+   * Events are partitioned by customer_id
+   * A new session starts if the time between two consecutive events is more than 30 mins
+
+4. Transaction Aggregation
+
+   Customer level aggregation:
+   * Total Number of orders
+   * Total Revenue
+   * Most recent Order DAte
+
+   This supports the RFM analysis patterns.
+
+5. Consistency Checks
+
+   * Customers with signup dates after the last observed event date are evaluated
+   * Orders placed after the analysis date are checked
+   * Ensures all entities fall within the observation window.
+  
+6. Customer Level Dataset Creation
+
+   All the datasets are joined at customer grain to ensure inclusion of inactive users.
+   
+   Missing values are handled.
+
+7. Engagement Feature Engineering
+
+   The pipeline computes engagement features:
+   * Recency: Days since last order (relative to as-of-date)
+   * Order Frequency
+   * Session Activity
+   * Revenue
+
+   Min-Max normalization is applied .
+
+8. Engagement Scoring and Segmentation
+
+   A weighted engagement score is computed:
+   * Recency (40%)
+   * Frequency (30%) (Order Frequency and Session Acitvity)
+   * Monetary Value (30%)
+  
+   Additional Fields:
+   * Engagement Segment (High/ Medium/ Low/ At Risk)
+   * Engagement Status (Active, Browsing Only, Not Active)
+  
+9. Performance Optimization
+
+   The final customer engagement dataset is presisted using Memory and Disk
+
+10. Final Validation
+
+    Before export, the pipelines checks:
+    1. One row per customer
+    2. Engagement score range validation between (0-1)
+    3. Null safety
+   
+  
 ## Output
 
 ## Analytics and Visualization
