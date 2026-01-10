@@ -131,6 +131,8 @@ This score will be used to identify:
 
 Executive Summary:
 
+The executive summary provides a high-level view of customer engagement health
+
 This page provides a high level check of customer engagement.
 
 
