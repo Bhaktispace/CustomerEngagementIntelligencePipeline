@@ -116,24 +116,23 @@ Following are the data sources used and they are of various formats:
 * Automation: Identify at-risk users and engage them with personalized win-back campaigns.
 
 ## PHASE 8️⃣ – Power BI Dashboard (What to Build)
-“The dashboard progresses from high-level engagement health to explainability, segmentation, churn risk, and finally individual customer drill-down, enabling both strategic and tactical decision-making.”
+The dashboard progresses from high-level engagement health to explainability, segmentation, churn risk, and finally individual customer drill-down, enabling both strategic and tactical decision-making.
+
 Create a behaviorally aware engagement score at the customer level by combining:
-
-Purchase recency
-
-Purchase frequency
-
-Web engagement activity
-
-Monetary value
+* Purchase recency
+* Purchase frequency
+* Web engagement activity
+* Monetary value
 
 This score will be used to identify:
+* High-value customers
+* At-risk customers
+* Highly engaged non-buyers
 
-High-value customers
+Executive Summary:
 
-At-risk customers
+This page provides a high level check of customer engagement.
 
-Highly engaged non-buyers
 
 1️⃣ Executive Overview (Start Here)
 🎯 Purpose
