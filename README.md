@@ -131,7 +131,11 @@ This score will be used to identify:
 
 Executive Summary:
 
-The executive summary provides a high-level view of customer engagement health
+The executive summary provides a high-level view of customer engagement health.
+
+Customer Value vs Engagement Risk:
+
+This page helps marketing and retention teams prioritize customers by balancing business value (revenue) against engagement risk, so actions can be focused where impact is highest.
 
 This page provides a high level check of customer engagement.
 
