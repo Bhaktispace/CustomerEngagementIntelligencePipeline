@@ -139,6 +139,11 @@ This page helps marketing and retention teams prioritize customers by balancing 
 
 This page provides a high level check of customer engagement.
 
+At-Risk Customers:
+
+This page isolates active customers with declining engagement, quantifies the revenue at risk, explains the behavioral drivers using recency, and provides a ready-to-use target list for retention campaigns.
+
+
 High Value Customers:
 
 This page identifies high value customers who are both revenue-significant and strongly engaged. It enables proactive retention and reward strategies.
