@@ -148,6 +148,10 @@ High Value Customers:
 
 This page identifies high value customers who are both revenue-significant and strongly engaged. It enables proactive retention and reward strategies.
 
+Behavior Insights:
+
+The Behavior Insights page explores behavioral drivers behind engagement scores by analyzing session frequency, purchase behavior, and their relationships, providing explainability to the engagement model.
+
 
 1️⃣ Executive Overview (Start Here)
 🎯 Purpose
