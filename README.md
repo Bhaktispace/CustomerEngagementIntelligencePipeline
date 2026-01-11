@@ -139,6 +139,10 @@ This page helps marketing and retention teams prioritize customers by balancing 
 
 This page provides a high level check of customer engagement.
 
+High Value Customers:
+
+This page identifies high value customers who are both revenue-significant and strongly engaged. It enables proactive retention and reward strategies.
+
 
 1️⃣ Executive Overview (Start Here)
 🎯 Purpose
