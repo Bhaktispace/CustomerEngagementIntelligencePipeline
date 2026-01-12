@@ -6,7 +6,26 @@ Marketing and retention team need ways to identify:
 * Customers losing engagement and at risk of churn
 
 ## Project Goal
-To build a data pipeline using PySpark that transforms raw customer, order and web event data into actionable insights for marketing and stakeholders. The pipeline is designed with production-style practices including data quality checks, sessionization logic, reproducibility controls, and explicit handling of edge cases.
+Build an end-to-end customer engagement data pipeline using PySpark that transforms raw customer, order, and web event data into actionable, analytics-ready insights.
+
+The pipeline is designed with production-style practices, including:
+
+* Data quality and integrity checks
+
+* Event sessionization logic
+
+* Reproducible analysis using a fixed as-of date
+
+* Explicit handling of inactive and edge-case customers
+
+The final output is optimized for downstream BI consumption and customer-level engagement analysis.
+
+## Data Disclaimer
+
+Synthetic Data Notice
+
+All datasets used in this project are synthetically generated and designed to simulate realistic customer, transaction, and web behavior patterns.
+No real customer data, personally identifiable information (PII), or proprietary business data is used.
 
 The final output is optimized for downstream BI consumption and customer engagement analysis.
 
