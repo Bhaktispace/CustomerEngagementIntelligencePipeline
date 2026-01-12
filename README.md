@@ -56,20 +56,21 @@ Following are the data sources used and they are of various formats:
    * Null checks on primary identifiers
    * Referential integrity checks to prevent orphan orders or events
    * Validation of non-negative order amounts
-   * One-row-per customer grain
+   * Verification of one-row-per customer grain
   
 3. Web Sessionization
 
    Web Events are sessionized using Spark window functions
    * Events are partitioned by customer_id
+   * Events ordered by timestamp
    * A new session starts if the time between two consecutive events is more than 30 mins
 
 4. Transaction Aggregation
 
-   Customer level aggregation:
+   Orders are aggregated to the customer level:
    * Total Number of orders
    * Total Revenue
-   * Most recent Order DAte
+   * Most recent Order Date
 
    This supports the RFM analysis patterns.
 
@@ -81,9 +82,8 @@ Following are the data sources used and they are of various formats:
   
 6. Customer Level Dataset Creation
 
-   All the datasets are joined at customer grain to ensure inclusion of inactive users.
-   
-   Missing values are handled.
+   * Customer, order, and session datasets are joined at customer grain
+   * Missing values are handled
 
 7. Engagement Feature Engineering
 
@@ -92,8 +92,7 @@ Following are the data sources used and they are of various formats:
    * Order Frequency
    * Session Activity
    * Revenue
-
-   Min-Max normalization is applied.
+   * Min-Max normalization applied to all engagement components
 
 8. Engagement Scoring and Segmentation
 
@@ -119,18 +118,6 @@ Following are the data sources used and they are of various formats:
    
 ## Power BI Dashboard
 The dashboard progresses from high-level engagement health to explainability, segmentation, churn risk, and finally individual customer drill-down, enabling both strategic and tactical decision-making.
-
-Create a behaviorally aware engagement score at the customer level by combining:
-* Purchase recency
-* Purchase frequency
-* Web engagement activity
-* Monetary value
-
-This score will be used to identify:
-* High-value customers
-* At-risk customers
-* Highly engaged non-buyers
-
 
 ### 1. Executive Summary:
 
@@ -172,10 +159,10 @@ The Behavior Insights page explores behavioral drivers behind engagement scores 
 * Google Colab (execution environment)
 * Parquet & JSON (source data formats)
 * CSV (analytics-ready output for BI tools)
-* Power BI for Dashboard
+* Power BI (Visualization and analysis)
 
 ## Potential Advanced Studies
-* Advanced segmentation Analysis: Create a highly targeted segments based on user behavor
-* Personalized Campaigns: Deliver real-time, tailored messages across multiple channels like push notification, in-app messages and emails
-* Behavioral Analytics: Gain deep insights into customer journeys and behavior, helping optimize marketing strategies
-* Automation: Identify at-risk users and engage them with personalized win-back campaigns.
+* Advanced behavioral segmentation
+* Personalized campaign targeting
+* Customer journey analysis
+* Automated churn detection and win-back workflows
