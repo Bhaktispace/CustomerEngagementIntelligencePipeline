@@ -98,11 +98,6 @@ Following are the data sources used and they are of various formats:
     2. Engagement score range validation between (0-1)
     3. Null safety
    
-  
-## Output
-
-## Analytics and Visualization
-
 ## Power BI Dashboard
 The dashboard progresses from high-level engagement health to explainability, segmentation, churn risk, and finally individual customer drill-down, enabling both strategic and tactical decision-making.
 
