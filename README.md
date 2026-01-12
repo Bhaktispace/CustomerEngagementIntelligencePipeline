@@ -103,18 +103,6 @@ Following are the data sources used and they are of various formats:
 
 ## Analytics and Visualization
 
-## Tech Stack
-* PySpark (Spark SQL, Window Functions)
-* Google Colab (execution environment)
-* Parquet & JSON (source data formats)
-* CSV (analytics-ready output for BI tools)
-
-## Potential Advanced Studies
-* Advanced segmentation Analysis: Create a highly targeted segments based on user behavor
-* Personalized Campaigns: Deliver real-time, tailored messages across multiple channels like push notification, in-app messages and emails
-* Behavioral Analytics: Gain deep insights into customer journeys and behavior, helping optimize marketing strategies
-* Automation: Identify at-risk users and engage them with personalized win-back campaigns.
-
 ## Power BI Dashboard
 The dashboard progresses from high-level engagement health to explainability, segmentation, churn risk, and finally individual customer drill-down, enabling both strategic and tactical decision-making.
 
@@ -134,20 +122,31 @@ This score will be used to identify:
 
 The executive summary provides a high-level view of customer engagement health.
 
-2. Customer Value vs Engagement Risk:
+### 2. Customer Value vs Engagement Risk:
 
 This page helps marketing and retention teams prioritize customers by balancing business value (revenue) against engagement risk, so actions can be focused where impact is highest.
 
-This page provides a high level check of customer engagement.
-
-3. At-Risk Customers:
+### 3. At-Risk Customers:
 
 This page isolates active customers with declining engagement, quantifies the revenue at risk, explains the behavioral drivers using recency, and provides a ready-to-use target list for retention campaigns.
 
-4. High Value Customers:
+### 4. High Value Customers:
 
 This page identifies high value customers who are both revenue-significant and strongly engaged. It enables proactive retention and reward strategies.
 
-5. Behavior Insights:
+### 5. Behavior Insights:
 
 The Behavior Insights page explores behavioral drivers behind engagement scores by analyzing session frequency, purchase behavior, and their relationships, providing explainability to the engagement model.
+
+## Tech Stack
+* PySpark (Spark SQL, Window Functions)
+* Google Colab (execution environment)
+* Parquet & JSON (source data formats)
+* CSV (analytics-ready output for BI tools)
+* Power BI for Dashboard
+
+## Potential Advanced Studies
+* Advanced segmentation Analysis: Create a highly targeted segments based on user behavor
+* Personalized Campaigns: Deliver real-time, tailored messages across multiple channels like push notification, in-app messages and emails
+* Behavioral Analytics: Gain deep insights into customer journeys and behavior, helping optimize marketing strategies
+* Automation: Identify at-risk users and engage them with personalized win-back campaigns.
