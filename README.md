@@ -130,7 +130,7 @@ This score will be used to identify:
 * Highly engaged non-buyers
 
 
-# 1. Executive Summary:
+### 1. Executive Summary:
 
 The executive summary provides a high-level view of customer engagement health.
 
