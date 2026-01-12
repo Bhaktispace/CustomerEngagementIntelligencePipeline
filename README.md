@@ -1,7 +1,10 @@
 # CustomerEngagementIntelligencePipeline
 
+## TL;DR
+Built a PySpark-based customer engagement pipeline that sessionizes web events, performs RFM-style feature engineering, and produces an analytics-ready customer dataset powering a multi-page Power BI dashboard for retention and churn analysis.
+
 ## Business Problem
-Marketing and retention team need ways to identify:
+Marketing and retention team need a scalable, repeatable way to identify:
 * High value customers to retain and reward
 * Customers losing engagement and at risk of churn
 
@@ -44,6 +47,7 @@ Following are the data sources used and they are of various formats:
   This dataset contains Customer Id, Event Time and Event Type
 
 ## Data Pipeline Architecture
+Spark was chosen to simulate scalable processing patterns commonly used for large customer event datasets.
 1. Data Ingestion
    
    * Reads Parquet and JSON datasets using Spark.
@@ -121,28 +125,28 @@ The dashboard progresses from high-level engagement health to explainability, se
 
 ### 1. Executive Summary:
 
-The executive summary provides a high-level view of customer engagement health.
+The executive summary provides a high-level view of customer engagement health. This page is to be used by the Leadership team
 
 <img width="1252" height="710" alt="ExecutiveSummary" src="https://github.com/user-attachments/assets/f9144187-34bd-4d76-b116-29be2c5969ca" />
 
 
 ### 2. Customer Value vs Engagement Risk:
 
-This page helps marketing and retention teams prioritize customers by balancing business value (revenue) against engagement risk, so actions can be focused where impact is highest.
+This page helps marketing and retention teams prioritize customers by balancing business value (revenue) against engagement risk, so actions can be focused where impact is highest. This page can be used by Marketing and retention team.
 
 <img width="1240" height="700" alt="CustomerValue" src="https://github.com/user-attachments/assets/e141cc96-042e-4c41-9a98-8021cc7b2f42" />
 
 
 ### 3. At-Risk Customers:
 
-This page isolates active customers with declining engagement, quantifies the revenue at risk, explains the behavioral drivers using recency, and provides a ready-to-use target list for retention campaigns.
+This page isolates active customers with declining engagement, quantifies the revenue at risk, explains the behavioral drivers using recency, and provides a ready-to-use target list for retention campaigns. This page can be used by Marketing and retention team.
 
 <img width="1247" height="711" alt="AtRisk" src="https://github.com/user-attachments/assets/378783c1-67c5-4e62-b387-0db685867908" />
 
 
 ### 4. High Value Customers:
 
-This page identifies high value customers who are both revenue-significant and strongly engaged. It enables proactive retention and reward strategies.
+This page identifies high value customers who are both revenue-significant and strongly engaged. It enables proactive retention and reward strategies. This page can be used Marketing and retention team.
 
 <img width="1248" height="696" alt="high value" src="https://github.com/user-attachments/assets/6b36f994-b2e7-40ee-80bd-647262f75b4b" />
 
