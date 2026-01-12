@@ -116,30 +116,35 @@ This score will be used to identify:
 ### 1. Executive Summary:
 
 The executive summary provides a high-level view of customer engagement health.
+
 <img width="1252" height="710" alt="ExecutiveSummary" src="https://github.com/user-attachments/assets/f9144187-34bd-4d76-b116-29be2c5969ca" />
 
 
 ### 2. Customer Value vs Engagement Risk:
 
 This page helps marketing and retention teams prioritize customers by balancing business value (revenue) against engagement risk, so actions can be focused where impact is highest.
+
 <img width="1240" height="700" alt="CustomerValue" src="https://github.com/user-attachments/assets/e141cc96-042e-4c41-9a98-8021cc7b2f42" />
 
 
 ### 3. At-Risk Customers:
 
 This page isolates active customers with declining engagement, quantifies the revenue at risk, explains the behavioral drivers using recency, and provides a ready-to-use target list for retention campaigns.
+
 <img width="1247" height="711" alt="AtRisk" src="https://github.com/user-attachments/assets/378783c1-67c5-4e62-b387-0db685867908" />
 
 
 ### 4. High Value Customers:
 
 This page identifies high value customers who are both revenue-significant and strongly engaged. It enables proactive retention and reward strategies.
+
 <img width="1248" height="696" alt="high value" src="https://github.com/user-attachments/assets/6b36f994-b2e7-40ee-80bd-647262f75b4b" />
 
 
 ### 5. Behavior Insights:
 
 The Behavior Insights page explores behavioral drivers behind engagement scores by analyzing session frequency, purchase behavior, and their relationships, providing explainability to the engagement model.
+
 <img width="1256" height="576" alt="behavior" src="https://github.com/user-attachments/assets/2f479034-468a-4c50-b3fe-3fc50b698366" />
 
 
