@@ -170,3 +170,8 @@ The Behavior Insights page explores behavioral drivers behind engagement scores 
 * Personalized campaign targeting
 * Customer journey analysis
 * Automated churn detection and win-back workflows
+
+## Assumptions and Limitations:
+A significant portion of expected user interaction events is missing from the dataset. This suggests potential gaps in event instrumentation or data collection logic that would typically require clarification from the data engineering or product analytics teams.
+
+For the purpose of this project, the analysis is intentionally performed using the data exactly as provided. All assumptions, constraints, and downstream impacts are explicitly documented to ensure transparency and reproducibility.
