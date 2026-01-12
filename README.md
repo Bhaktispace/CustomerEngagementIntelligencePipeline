@@ -115,7 +115,7 @@ Following are the data sources used and they are of various formats:
 * Behavioral Analytics: Gain deep insights into customer journeys and behavior, helping optimize marketing strategies
 * Automation: Identify at-risk users and engage them with personalized win-back campaigns.
 
-## PHASE 8️⃣ – Power BI Dashboard (What to Build)
+## Power BI Dashboard
 The dashboard progresses from high-level engagement health to explainability, segmentation, churn risk, and finally individual customer drill-down, enabling both strategic and tactical decision-making.
 
 Create a behaviorally aware engagement score at the customer level by combining:
@@ -129,25 +129,24 @@ This score will be used to identify:
 * At-risk customers
 * Highly engaged non-buyers
 
-Executive Summary:
+1. Executive Summary:
 
 The executive summary provides a high-level view of customer engagement health.
 
-Customer Value vs Engagement Risk:
+2. Customer Value vs Engagement Risk:
 
 This page helps marketing and retention teams prioritize customers by balancing business value (revenue) against engagement risk, so actions can be focused where impact is highest.
 
 This page provides a high level check of customer engagement.
 
-At-Risk Customers:
+3. At-Risk Customers:
 
 This page isolates active customers with declining engagement, quantifies the revenue at risk, explains the behavioral drivers using recency, and provides a ready-to-use target list for retention campaigns.
 
-
-High Value Customers:
+4. High Value Customers:
 
 This page identifies high value customers who are both revenue-significant and strongly engaged. It enables proactive retention and reward strategies.
 
-Behavior Insights:
+5. Behavior Insights:
 
 The Behavior Insights page explores behavioral drivers behind engagement scores by analyzing session frequency, purchase behavior, and their relationships, providing explainability to the engagement model.
